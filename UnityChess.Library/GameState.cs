@@ -44,7 +44,7 @@ namespace UnityChess.Library
             ulong target = Current.ZobristKey;
 
             int count = 0;
-            for (HistoryNode n = _head; n != null; n = n.Prev)
+            for (HistoryNode? n = _head; n != null; n = n.Prev)
             {
                 if (n.Hash == target) count++;
                 if (count >= 3) return true;
@@ -66,9 +66,9 @@ namespace UnityChess.Library
         private sealed class HistoryNode
         {
             public readonly ulong Hash;
-            public readonly HistoryNode Prev;
+            public readonly HistoryNode? Prev;
 
-            public HistoryNode(ulong hash, HistoryNode prev)
+            public HistoryNode(ulong hash, HistoryNode? prev)
             {
                 Hash = hash;
                 Prev = prev;

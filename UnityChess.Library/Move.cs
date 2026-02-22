@@ -112,7 +112,7 @@ namespace UnityChess.Library
         }
 
         public bool Equals(Move other) => _v == other._v;
-        public override bool Equals(object obj) => obj is Move m && Equals(m);
+        public override bool Equals(object? obj) => obj is Move m && Equals(m);
         public override int GetHashCode() => (int)_v;
     }
 }

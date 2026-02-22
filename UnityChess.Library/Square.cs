@@ -25,7 +25,7 @@ namespace UnityChess.Library
         }
 
         public bool Equals(Square other) => Index == other.Index;
-        public override bool Equals(object obj) => obj is Square s && Equals(s);
+        public override bool Equals(object? obj) => obj is Square s && Equals(s);
         public override int GetHashCode() => Index;
 
         public static bool TryParse(string s, out Square sq)

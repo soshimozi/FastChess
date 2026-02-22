@@ -410,7 +410,7 @@ namespace UnityChess.Library
                 && ZobristKey == other.ZobristKey;
         }
 
-        public override bool Equals(object obj) => obj is BoardState s && Equals(s);
+        public override bool Equals(object? obj) => obj is BoardState s && Equals(s);
         public override int GetHashCode() {
             HashCode hash = new();
             hash.Add(_wp); hash.Add(_wn); hash.Add(_wb); hash.Add(_wr); hash.Add(_wq); hash.Add(_wk);
@@ -619,7 +619,7 @@ namespace UnityChess.Library
         // Thread-local scratch MoveList to avoid allocations in Status/IsLegal
         private static class ThreadLocalMoveList
         {
-            [ThreadStatic] private static MoveList _moves;
+            [ThreadStatic] private static MoveList? _moves;
             public static MoveList Rent()
             {
                 _moves ??= new MoveList();

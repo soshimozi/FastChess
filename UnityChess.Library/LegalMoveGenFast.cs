@@ -590,7 +590,7 @@ namespace UnityChess.Library
 
         private static class PinLinePool
         {
-            [ThreadStatic] private static ulong[] _arr;
+            [ThreadStatic] private static ulong[]? _arr;
             public static ulong[] Rent()
             {
                 _arr ??= new ulong[64];

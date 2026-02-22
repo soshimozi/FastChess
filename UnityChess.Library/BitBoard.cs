@@ -30,7 +30,7 @@ namespace UnityChess.Library
         }
 
         public bool Equals(Bitboard other) => Value == other.Value;
-        public override bool Equals(object obj) => obj is Bitboard b && Equals(b);
+        public override bool Equals(object? obj) => obj is Bitboard b && Equals(b);
         public override int GetHashCode() => Value.GetHashCode();
     }
 }
