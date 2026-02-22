@@ -27,6 +27,10 @@ namespace FastChess.Library
         public Square To => new Square((byte)((_v >> 6) & 63));
         public MoveFlags Flags => (MoveFlags)((_v >> 16) & 0xFF);
 
+        public int Index => (From.Index << 6) + To.Index;
+
+
+        
         public PieceType? Promotion
         {
             get
@@ -44,6 +48,13 @@ namespace FastChess.Library
             }
         }
 
+        public static Move FromIndex(int index)
+        {
+            int from = index >> 6;
+            int to = index & 63;
+            return Create(new Square((byte)from), new Square((byte)to));
+        }
+        
         public static Move Create(Square from, Square to, MoveFlags flags = MoveFlags.None, PieceType? promotion = null)
         {
             uint promo = promotion switch
