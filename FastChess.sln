@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastChess.Library", "FastCh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastChess.Console", "FastChess.Console\FastChess.Console.csproj", "{BA004E17-C2CD-4A95-86F1-7960A5968D88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastChess.MagicGenerator", "FastChess.MagicGenerator\FastChess.MagicGenerator.csproj", "{408834D8-BEAC-4468-895D-211BCA803FEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastChess.Magic", "FastChess.Magic\FastChess.Magic.csproj", "{408834D8-BEAC-4468-895D-211BCA803FEB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastChess.Tests", "FastChess.Tests\FastChess.Tests.csproj", "{A6BBA4B2-2E6E-4E72-9E34-66379F91F4F6}"
 EndProject

@@ -1,5 +1,5 @@
 using System;
-using FastChess.Core;
+using FastChess.Library;
 
 namespace FastChess.Library
 {

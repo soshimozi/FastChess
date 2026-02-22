@@ -1,5 +1,5 @@
 // See https://aka.ms/new-console-template for more information
-using FastChess.Core;
+using FastChess.Magic;
 
 var text = MagicGenerator.GenerateAndLog();
 
