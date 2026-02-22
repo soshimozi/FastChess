@@ -20,6 +20,19 @@ dotnet build FastChess.sln
 dotnet test FastChess.sln
 ```
 
+## Unity plugin usage
+
+`FastChess.Library` is multi-targeted and produces both:
+- `net8.0`
+- `netstandard2.1`
+
+For Unity, use the `netstandard2.1` build output:
+
+- `FastChess.Library/bin/Debug/netstandard2.1/FastChess.Library.dll`
+- or `FastChess.Library/bin/Release/netstandard2.1/FastChess.Library.dll`
+
+Do not copy the `net8.0` DLL into Unity `Assets/Plugins`; that can trigger startup load/type-cache errors.
+
 ## Run the console sample
 
 ```bash

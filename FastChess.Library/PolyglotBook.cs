@@ -9,6 +9,10 @@ namespace FastChess.Library
     public sealed class PolyglotBook
     {
         private const int EntrySize = 16;
+#if !NET6_0_OR_GREATER
+        [ThreadStatic] private static Random? _threadRandom;
+        private static int _seed = Environment.TickCount;
+#endif
         private static readonly CastlingRights[] CastleRightsOrder =
         {
             CastlingRights.WhiteKingSide,
@@ -60,11 +64,11 @@ namespace FastChess.Library
 
             if (totalWeight <= 0)
             {
-                move = candidates[Random.Shared.Next(candidates.Count)].Move;
+                move = candidates[NextRandom(candidates.Count)].Move;
                 return true;
             }
 
-            int pick = Random.Shared.Next(totalWeight);
+            int pick = NextRandom(totalWeight);
             int run = 0;
             for (int i = 0; i < candidates.Count; i++)
             {
@@ -274,6 +278,20 @@ namespace FastChess.Library
                 if (n <= 0) throw new EndOfStreamException("Unexpected EOF in Polyglot book.");
                 read += n;
             }
+        }
+
+        private static int NextRandom(int maxExclusive)
+        {
+#if NET6_0_OR_GREATER
+            return Random.Shared.Next(maxExclusive);
+#else
+            if (_threadRandom == null)
+            {
+                int seed = System.Threading.Interlocked.Increment(ref _seed);
+                _threadRandom = new Random(seed);
+            }
+            return _threadRandom.Next(maxExclusive);
+#endif
         }
 
         private readonly record struct PolyglotEntry(Move Move, int Weight);
