@@ -1,0 +1,14 @@
+D:\Unity Chess\UnityChess.MagicGenerator\bin\Debug\net8.0\UnityChess.MagicGenerator.exe
+D:\Unity Chess\UnityChess.MagicGenerator\bin\Debug\net8.0\UnityChess.MagicGenerator.deps.json
+D:\Unity Chess\UnityChess.MagicGenerator\bin\Debug\net8.0\UnityChess.MagicGenerator.runtimeconfig.json
+D:\Unity Chess\UnityChess.MagicGenerator\bin\Debug\net8.0\UnityChess.MagicGenerator.dll
+D:\Unity Chess\UnityChess.MagicGenerator\bin\Debug\net8.0\UnityChess.MagicGenerator.pdb
+D:\Unity Chess\UnityChess.MagicGenerator\obj\Debug\net8.0\UnityChess.MagicGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Unity Chess\UnityChess.MagicGenerator\obj\Debug\net8.0\UnityChess.MagicGenerator.AssemblyInfoInputs.cache
+D:\Unity Chess\UnityChess.MagicGenerator\obj\Debug\net8.0\UnityChess.MagicGenerator.AssemblyInfo.cs
+D:\Unity Chess\UnityChess.MagicGenerator\obj\Debug\net8.0\UnityChess.MagicGenerator.csproj.CoreCompileInputs.cache
+D:\Unity Chess\UnityChess.MagicGenerator\obj\Debug\net8.0\UnityChess.MagicGenerator.dll
+D:\Unity Chess\UnityChess.MagicGenerator\obj\Debug\net8.0\refint\UnityChess.MagicGenerator.dll
+D:\Unity Chess\UnityChess.MagicGenerator\obj\Debug\net8.0\UnityChess.MagicGenerator.pdb
+D:\Unity Chess\UnityChess.MagicGenerator\obj\Debug\net8.0\UnityChess.MagicGenerator.genruntimeconfig.cache
+D:\Unity Chess\UnityChess.MagicGenerator\obj\Debug\net8.0\ref\UnityChess.MagicGenerator.dll
